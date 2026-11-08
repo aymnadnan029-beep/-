@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  min-height: 100vh;
+  color: #fff4f2;
+  background:
+    linear-gradient(rgba(35, 5, 15, .65), rgba(35, 5, 15, .85)),
+    url('assets/rose-background.jpg') center/cover fixed;
+  background-color: #350b19;
+}
+
+.intro {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+}
+
+.heart {
+  font-size: 65px;
+  color: #f3b8c5;
+  margin-bottom: 12px;
+}
+
+.small-text {
+  color: #e8c2ca;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: clamp(55px, 12vw, 90px);
+  font-weight: 500;
+  margin: 5px 0 15px;
+}
+
+.intro p:not(.small-text) {
+  color: #f1dce0;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+button {
+  border: 1px solid rgba(255,255,255,.45);
+  background: rgba(255,255,255,.12);
+  color: white;
+  padding: 13px 32px;
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+  transition: .3s;
+}
+
+button:hover {
+  background: rgba(255,255,255,.25);
+  transform: translateY(-2px);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.story, .letter {
+  min-height: 100vh;
+  padding: 35px 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.message {
+  max-width: 650px;
+  font-size: clamp(23px, 5vw, 34px);
+  line-height: 2;
+  color: #fff1f3;
+}
+
+#caption {
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.letter-content {
+  max-width: 650px;
+  padding: 30px 10px;
+  font-size: 18px;
+  line-height: 2.1;
+  color: #fff0f1;
+}
+
+.letter-content p {
+  margin-bottom: 20px;
+}
+
+.letter-content p:first-child {
+  font-size: 25px;
+}
